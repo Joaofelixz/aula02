@@ -7,7 +7,7 @@ export default function App() {
   useEffect(() => { 
 
     const buscarUsuario  = async () => {
-        const Usuario    = await fetch('https://json');
+        const Usuario    = await fetch('https://jsonplaceholder.typicode.com/todos');
         const dados =  await Usuario.json();
         setUsuario(dados); 
     }
